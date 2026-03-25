@@ -1,9 +1,12 @@
 <?php
 
+use App\Controllers\aboutController;
 use App\Controllers\homeController;
 use Taskflair\Http\Route;
-    use Taskflair\Http\App;
 
 
-    Route::setRoute('/' , [homeController::class , 'hero']);
+
+    Route::setRoute('/' , [homeController::class , 'index']);
+
+    Route::setRoute('/about' , [aboutController::class , 'aboutUs']);
 

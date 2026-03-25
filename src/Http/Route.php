@@ -1,9 +1,6 @@
 <?php
 
     namespace Taskflair\Http;
-
-    use App\Controllers\homeController;
-
     class Route {
 
         public static array $routes = [];
@@ -20,13 +17,14 @@
 
         // Store the Route Elements
         public static function setRoute(string|int $RouteTarget , callable|array $RouteAction) {
+            $routes = strval($RouteTarget);
 
-            if (is_callable($RouteAction) || self::ValidateRouterArray($RouteAction)) {
-                self::$routes[self::Request_method()][$RouteTarget] = $RouteAction;
-            }   
-            if (self::ValidateRouterArray($RouteAction) && !is_callable($RouteAction)) {
-                self::$routes[self::Request_method()][$RouteTarget] = $RouteAction;
+            if (!str_starts_with($routes , '/')) {
+                $routes = '/' . $routes;
             }
+            if (is_callable($RouteAction) || self::ValidateRouterArray($RouteAction)) {
+                self::$routes[self::Request_method()][$routes] = $RouteAction;
+            }   
         }
 
          // Uri handling
@@ -50,7 +48,7 @@
 
         // CallBack Array
 
-        private static function ValidateRouterArray(Array $CallBackArray) {
+        private static function ValidateRouterArray(array $CallBackArray) {
 
             if (is_array($CallBackArray) && count($CallBackArray) === 2) {
 
