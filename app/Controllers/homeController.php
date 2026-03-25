@@ -1,10 +1,12 @@
 <?php
 
     namespace App\Controllers;
-    use Taskflair\core\Controller;
 
-    class homeController extends Controller {
-        public static function hero() {
-            echo 'waaa kheddam hadchi';
+    class homeController {
+        public static function index() {
+            echo 'this is home page';
         }
     }
+
+
+?>
