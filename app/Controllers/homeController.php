@@ -4,7 +4,7 @@
 
     class homeController {
         public static function index() {
-            echo 'this is home page';
+            make_view('index');
         }
     }
 

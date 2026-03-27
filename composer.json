@@ -2,6 +2,9 @@
     "name": "driouechoussa/taskflair",
     "type": "project",
     "autoload": {
+        "files": [
+            "src/core/helpers.php"
+        ],
         "psr-4": {
             "Taskflair\\": "src/",
             "App\\": "app/"
