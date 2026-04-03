@@ -1,21 +1,30 @@
 <?php
 
-use Taskflair\core\viewCompiler;
+    use Taskflair\core\viewCompiler;
 
     if (!function_exists('make_view')) {
-        function make_view(string $view , ?array $context = []) {
-            if (!is_int($view)) {
-                if (str_ends_with($view , ".view.php")) {
-                    $view_file = BASE_PATH . "/views/". trim(substr($view , 0 , -9)) . ".view.php";
-                    require_once $view_file;
-                    /*
-                        new viewCompiler($viwe_file);
-                    */
-                }
-                else if (!str_ends_with($view , ".view.php")) {
-                    $view_file = BASE_PATH . "/views/". trim($view) . ".view.php";
-                    require_once $view_file;
-                }
+        function make_view(string $view, ?array $context = []) {
+            $view = trim($view);
+            
+            // Check if user already provided .view.php or not
+            if (str_ends_with($view, ".view.php")) {
+                $view_file = BASE_PATH . "/views/" . $view;
+            } else {
+                $view_file = BASE_PATH . "/views/" . $view . ".view.php";
+            }
+            
+            // Compile and render the view if the file exists
+            if (file_exists($view_file)) {
+                new viewCompiler($view_file);
+                
+                // if (isset($compiled_path) && file_exists($compiled_path)) {
+                //     if (!empty($context)) {
+                //         extract($context);
+                //     }
+                //     require $compiled_path;
+                // }
+            } else {
+                throw new \Exception("View file not found: {$view_file}");
             }
         }
     }
