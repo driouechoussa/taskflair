@@ -3,35 +3,57 @@
 
     class viewCompiler {
 
-    private static string $view_path;
     private static array $directives = [];
+    private static $pattern = '/@([a-zA-Z0-9_]+)\s*\((.*?)\)/';
 
-    public function __construct(string $view_path) {
-        self::$view_path = $view_path;
+    public function __construct() {
 
-        $this->directive('static', function ($file) {
-            $file = trim($file, "'\"");
-            return '/assets/'. $file;
+        $this->directive('get_static', function ($expression) {
+            return "<?php echo '/assets/' . " . $expression . "; ?>";
         });
         
+        $this->directive('site_name', function ($name) {
+            return "<?php echo " . $name . "; ?>";
+        });
     }
 
     private function directive($name, $Action) {
         self::$directives[$name] = $Action;
     }
 
-    public static function compile() {
-        // convert the provided content into a pure php syntax and save it as an unique php file 
-        // convert functions 
-        $content = file_get_contents(self::$view_path);
+    private static function compile(string $content_path) { 
+        if (file_exists($content_path)) {
+            $content = file_get_contents($content_path);
+            $content = preg_replace_callback (
+                self::$pattern,
+                function ($matches) {
+                    $directive_name = $matches[1];
 
-        return $content;
-        
+                    if (isset(self::$directives[$directive_name])) {
+                        return call_user_func(self::$directives[$directive_name], $matches[2]);
+                    }
+                    return $matches[0];
+                }
+                , $content
+            ); 
 
+            $runtime_dir = BASE_PATH . "/runtime/app/views/";
+            if (!is_dir($runtime_dir)) {
+                mkdir($runtime_dir, 0777, true);
+            }
+
+            file_put_contents($runtime_dir . md5($content_path) . ".php" , $content); 
+            return true;
+        }
+        return false;
     }
 
-    public static function render() {
-        
+    public static function render(string $view_path) {
+        if (self::compile($view_path)) {
+            require BASE_PATH . "/runtime/app/views/" . md5($view_path) . ".php";
+        } else {
+            echo "View not found";
+        }
     }
     
     }
