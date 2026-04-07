@@ -11,6 +11,6 @@
 
 
 
-    new App(new Route())->execute();
+    (new App(new Route()))->execute();
 
 
