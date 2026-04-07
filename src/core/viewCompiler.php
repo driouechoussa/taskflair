@@ -13,21 +13,21 @@ class viewCompiler
 
         $this->directive('get_static', function ($expression) {
             return "<?php echo '/assets/' . " . $expression . "; ?>";
-        });
+        }); 
 
         $this->directive('site_name', function ($name) {
             return "<?php echo " . $name . "; ?>";
         });
 
         $this->directive('insert', function ($path) {
-            $view = trim($path);
+            $view = trim(str_replace(['\'', '"'], '', $path));
             if (str_ends_with($view, ".view.php")) {
                 $view_file = BASE_PATH . "/views/" . $view;
             } else {
                 $view_file = BASE_PATH . "/views/" . $view . ".view.php";
             }
-            
-
+            $content = file_get_contents($view_file);
+            return "<?php echo " . var_export($content, true) . "; ?>";
         });
     }
 
