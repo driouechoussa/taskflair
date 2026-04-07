@@ -13,10 +13,10 @@
 </head>
 <body>
     <div class="app-container">
-        <?php echo '<header class="app-header">
+        <header class="app-header">
             <div class="header-content">
                 <div>
-                    <img width="150" src=" @get_static(\'media/logo.png\') " alt="logo">
+                    <img width="150" src=" <?php echo '/assets/' . 'media/logo.png'; ?> " alt="logo">
                 </div>
                 <div class="theme-toggle">
                     <span>Dark Mode</span>
@@ -26,7 +26,7 @@
                     </label>
                 </div>
             </div>
-</header>'; ?>
+</header>
 
         <div class="main-content">
             <aside class="sidebar">

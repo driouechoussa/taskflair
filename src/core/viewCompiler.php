@@ -26,8 +26,11 @@ class viewCompiler
             } else {
                 $view_file = BASE_PATH . "/views/" . $view . ".view.php";
             }
-            $content = file_get_contents($view_file);
-            return "<?php echo " . var_export($content, true) . "; ?>";
+            if (self::compile($view_file)) {
+                $compiled_file = BASE_PATH . "/runtime/app/views/" . md5($view_file) . ".php";
+                return file_get_contents($compiled_file);
+            }
+            return "";
         });
     }
 
