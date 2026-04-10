@@ -6,7 +6,8 @@ class viewCompiler
 {
 
     private static array $directives = [];
-    private static $pattern = '/@([a-zA-Z0-9_]+)\s*\((.*?)\)/';
+    
+    private const DIRECTIVE_FUNC_PATTERN = '/@([a-zA-Z0-9_]+)\s*\((.*?)\)/';
 
     public function __construct()
     {
@@ -44,7 +45,7 @@ class viewCompiler
         if (file_exists($content_path)) {
             $content = file_get_contents($content_path);
             $content = preg_replace_callback(
-                self::$pattern,
+                self::DIRECTIVE_FUNC_PATTERN,
                 function ($matches) {
                     $directive_name = $matches[1];
 
