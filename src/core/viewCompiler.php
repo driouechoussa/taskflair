@@ -20,6 +20,10 @@ class viewCompiler
             return "<?php echo " . $name . "; ?>";
         });
 
+        $this->directive('route', function ($expression) {
+            return "<?php echo route(" . $expression . "); ?>";
+        });
+
         $this->directive('insert', function ($path) {
             $view = trim(str_replace(['\'', '"'], '', $path));
             if (str_ends_with($view, ".view.php")) {

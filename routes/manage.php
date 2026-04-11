@@ -7,8 +7,8 @@ use Taskflair\Http\Route;
 
 
 
-    Route::setRoute('/' , [indexController::class , 'index']);
+    Route::setRoute('/' , [indexController::class , 'index'])->name('home');
 
-    Route::setRoute('/home' , [homeController::class , 'homePage']);
+    Route::setRoute('/home' , [homeController::class , 'homePage'])->name('dashboard');
 
-    Route::setRoute('/about' , [aboutController::class , 'aboutUs']);
+    Route::setRoute('/about' , [aboutController::class , 'aboutUs'])->name('about');

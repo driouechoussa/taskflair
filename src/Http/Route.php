@@ -4,6 +4,9 @@
     class Route {
 
         public static array $routes = [];
+        public static array $names = [];
+        private static string $lastRoute; // store last route
+
         public  string $CurrentMethod;
         public  string $CurrentUri;
 
@@ -24,7 +27,23 @@
             }
             if (is_callable($RouteAction) || self::ValidateRouterArray($RouteAction)) {
                 self::$routes[self::Request_method()][$routes] = $RouteAction;
+                self::$lastRoute = $routes;
+                return new self();
             }   
+        }
+
+        public function name(string $name) {
+            if (isset(self::$lastRoute)) {
+                self::$names[$name] = self::$lastRoute;
+            }
+            return $this;
+        }
+
+        public static function getRouteByName(string $name) {
+            if (isset(self::$names[$name])) {
+                return self::$names[$name];
+            }
+            return "#route_not_found_" . $name;
         }
 
          // Uri handling

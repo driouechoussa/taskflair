@@ -1,6 +1,7 @@
 <?php
 
     use Taskflair\core\viewCompiler;
+    use Taskflair\Http\Route;
 
     if (!function_exists('make_view')) {
         function make_view(string $view, ?array $context = []) {
@@ -24,5 +25,11 @@
             } else {
                 throw new \Exception("View file not found: {$view_file}");
             }
+        }
+    }
+
+    if (!function_exists('route')) {
+        function route(string $name) {
+            return Taskflair\Http\Route::getRouteByName($name);
         }
     }
