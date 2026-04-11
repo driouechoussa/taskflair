@@ -3,8 +3,8 @@
     namespace App\Controllers;
 
     class homeController {
-        public static function index() {
-            make_view('index');
+        public static function homePage() {
+            make_view('pages/home');
         }
     }
 
