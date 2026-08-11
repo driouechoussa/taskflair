@@ -357,26 +357,6 @@ input:checked + .slider:before {
     flex-shrink: 0;
 }
 
-#add-project-btn {
-    width: 100%;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 0.75rem;
-    border-radius: 0.35rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    transition: background-color 0.2s;
-}
-
-#add-project-btn:hover {
-    background-color: var(--primary-hover);
-}
-
 .stats-section {
     margin-top: auto;
 }
@@ -429,40 +409,6 @@ input:checked + .slider:before {
     position: absolute;
     left: 0.75rem;
     color: var(--secondary-color);
-}
-
-#task-search {
-    padding: 0.5rem 1rem 0.5rem 2.25rem;
-    border-radius: 0.35rem;
-    border: 1px solid var(--border-color);
-    background-color: var(--input-bg);
-    color: var(--text-color);
-    width: 200px;
-    font-size: 0.9rem;
-}
-
-#task-search:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
-}
-
-#add-task-btn, #sort-tasks-btn {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.35rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: background-color 0.2s;
-}
-
-#add-task-btn:hover, #sort-tasks-btn:hover {
-    background-color: var(--primary-hover);
 }
 
 .task-filters {
@@ -870,15 +816,6 @@ input:checked + .slider:before {
         width: 100%;
         flex-direction: column;
         gap: 0.75rem;
-    }
-
-    #task-search {
-        width: 100%;
-    }
-
-    #add-task-btn, #sort-tasks-btn {
-        width: 100%;
-        justify-content: center;
     }
 
     .task-filters {

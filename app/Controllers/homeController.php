@@ -4,7 +4,7 @@
 
     class homeController {
         public static function homePage() {
-            make_view('pages/home');
+            make_view('dashboard');
         }
     }
 
