@@ -1,6 +1,6 @@
 <?php
 
-    namespace Taskflair\core;
+    namespace Buildilume\core;
 
     class Controller {
         

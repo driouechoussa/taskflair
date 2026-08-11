@@ -1,6 +1,6 @@
 <?php
 
-namespace Taskflair\Http;
+namespace Buildilume\Http;
 
 class Request
 {

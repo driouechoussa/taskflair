@@ -1,6 +1,6 @@
-# TaskFlair
+# Buildilume
 
-TaskFlair is a web-based task management application designed to help teams and individuals organize, track, and manage their work efficiently.
+Buildilume is a web-based task management application designed to help teams and individuals organize, track, and manage their work efficiently.
 
 ---
 
@@ -36,7 +36,7 @@ TaskFlair is a web-based task management application designed to help teams and 
 
 ## Getting Started
 
-These instructions will help you set up and run TaskFlair on your local machine for development and testing purposes.
+These instructions will help you set up and run Buildilume on your local machine for development and testing purposes.
 
 ---
 
@@ -44,8 +44,8 @@ These instructions will help you set up and run TaskFlair on your local machine 
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/driouechoussa/taskflair.git
-    cd taskflair
+    git clone https://github.com/driouechoussa/buildilume.git
+    cd buildilume
     ```
 
 2. **Install dependencies:**

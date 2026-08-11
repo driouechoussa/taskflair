@@ -1,17 +1,17 @@
 <?php
 
-namespace Taskflair\Http;
+namespace Buildilume\Http;
 
-use Taskflair\Http\Request;
+use Buildilume\Http\Request;
 
 
 
 class App
 {
     public Route $Router;
-    private \Taskflair\core\Container $container;
+    private \Buildilume\core\Container $container;
 
-    public function __construct(Route $Router, \Taskflair\core\Container $container)
+    public function __construct(Route $Router, \Buildilume\core\Container $container)
     {
         $this->Router = $Router;
         $this->container = $container;

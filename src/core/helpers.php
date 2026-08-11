@@ -1,7 +1,7 @@
 <?php
 
-    use Taskflair\core\viewCompiler;
-    use Taskflair\Http\Route;
+    use Buildilume\core\viewCompiler;
+    use Buildilume\Http\Route;
 
     if (!function_exists('make_view')) {
         function make_view(string $view, ?array $context = []) {
@@ -30,7 +30,7 @@
 
     if (!function_exists('route')) {
         function route(string $name) {
-            return Taskflair\Http\Route::getRouteByName($name);
+            return Buildilume\Http\Route::getRouteByName($name);
         }
     }
 

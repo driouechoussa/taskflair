@@ -1,12 +1,12 @@
 {
-    "name": "driouechoussa/taskflair",
+    "name": "driouechoussa/buildilume",
     "type": "project",
     "autoload": {
         "files": [
             "src/core/helpers.php"
         ],
         "psr-4": {
-            "Taskflair\\": "src/",
+            "Buildilume\\": "src/",
             "App\\": "app/"
         }
     },

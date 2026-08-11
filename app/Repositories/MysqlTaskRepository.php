@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use Taskflair\core\DatabaseInterface;
+use Buildilume\core\DatabaseInterface;
 
 class MysqlTaskRepository implements TaskRepositoryInterface
 {

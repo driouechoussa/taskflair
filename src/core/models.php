@@ -1,5 +1,5 @@
 <?php
-    namespace TaskFlair\Core;
+    namespace Buildilume\core;
 
     class Model {
         
