@@ -4,7 +4,7 @@
 
     class aboutController {
         public static function aboutUs() {
-            echo 'this is about page';
+            make_view('about');
         }
     }
 
