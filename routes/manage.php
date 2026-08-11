@@ -5,6 +5,7 @@ use App\Controllers\homeController;
 use App\Controllers\indexController;
 use App\Controllers\loginController;
 use App\Controllers\signupController;
+use App\Controllers\onboardingController;
 use Buildilume\Http\Route;
 
 
@@ -18,3 +19,5 @@ use Buildilume\Http\Route;
     Route::setRoute('/login' , [loginController::class , 'index'])->name('login');
 
     Route::setRoute('/signup' , [signupController::class , 'index'])->name('signup');
+
+    Route::setRoute('/onboarding' , [onboardingController::class , 'index'])->name('onboarding');
