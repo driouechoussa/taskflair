@@ -7,6 +7,7 @@ use App\Controllers\loginController;
 use App\Controllers\signupController;
 use App\Controllers\onboardingController;
 use App\Controllers\featuresController;
+use App\Controllers\pricingController;
 use Buildilume\Http\Route;
 
 
@@ -24,3 +25,5 @@ use Buildilume\Http\Route;
     Route::setRoute('/onboarding' , [onboardingController::class , 'index'])->name('onboarding');
 
     Route::setRoute('/features' , [featuresController::class , 'index'])->name('features');
+
+    Route::setRoute('/pricing' , [pricingController::class , 'index'])->name('pricing');

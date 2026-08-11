@@ -1,0 +1,329 @@
+/* Pricing page — built on landing.css's shared tokens/components.
+   New here: billing toggle, pricing cards, comparison table, FAQ accordion. */
+
+.pricing-hero {
+    padding-bottom: 3rem;
+}
+
+/* Billing toggle */
+.pricing-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.pricing-toggle-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--lp-ink-soft);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.pricing-toggle-label.is-active {
+    color: var(--lp-ink);
+}
+
+.pricing-toggle-save {
+    background: var(--lp-lime-pale);
+    color: #5c6b1e;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+}
+
+.pricing-toggle-switch {
+    width: 52px;
+    height: 30px;
+    border-radius: 999px;
+    background: var(--lp-black);
+    border: none;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease;
+}
+
+.pricing-toggle-thumb {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--lp-white);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.pricing-toggle-switch.is-yearly .pricing-toggle-thumb {
+    transform: translateX(22px);
+    background: var(--lp-lime);
+}
+
+/* Pricing cards */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.pricing-card {
+    background: var(--lp-white);
+    border: 1.5px solid var(--lp-border);
+    border-radius: 22px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1.25rem 2.5rem rgba(20, 23, 15, 0.08);
+}
+
+.pricing-card-featured {
+    border-color: var(--lp-lime);
+    box-shadow: 0 1.5rem 3rem rgba(20, 23, 15, 0.12);
+    transform: translateY(-8px);
+}
+
+.pricing-card-featured:hover {
+    transform: translateY(-12px);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--lp-lime);
+    color: var(--lp-black);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.pricing-card-header h3 {
+    font-family: var(--lp-font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--lp-ink);
+    margin-bottom: 0.4rem;
+}
+
+.pricing-card-header p {
+    color: var(--lp-ink-soft);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    min-height: 2.5em;
+}
+
+.pricing-price {
+    display: flex;
+    align-items: baseline;
+    gap: 0.35rem;
+}
+
+.pricing-price-amount {
+    font-family: var(--lp-font-display);
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--lp-ink);
+}
+
+.pricing-price-period {
+    color: var(--lp-ink-soft);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.pricing-price-note {
+    color: var(--lp-ink-soft);
+    font-size: 0.85rem;
+    margin: 0.35rem 0 1.5rem;
+}
+
+.pricing-cta {
+    width: 100%;
+    margin-bottom: 1.75rem;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    color: var(--lp-ink);
+    font-size: 0.9rem;
+}
+
+.pricing-features li i {
+    color: #5c6b1e;
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+}
+
+/* Comparison table */
+.pricing-compare-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--lp-border);
+    border-radius: 18px;
+}
+
+.pricing-compare {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 560px;
+    font-size: 0.92rem;
+}
+
+.pricing-compare th,
+.pricing-compare td {
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--lp-border);
+}
+
+.pricing-compare thead th {
+    font-family: var(--lp-font-display);
+    font-weight: 600;
+    color: var(--lp-ink);
+    background: var(--lp-gray-100);
+}
+
+.pricing-compare tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.pricing-compare-feature-col {
+    text-align: left !important;
+    color: var(--lp-ink);
+    font-weight: 500;
+}
+
+.pricing-compare-featured-col {
+    background: var(--lp-lime-pale);
+    font-weight: 600;
+}
+
+.pricing-compare td i.fa-check {
+    color: #5c6b1e;
+}
+
+.pricing-compare td i.fa-minus {
+    color: var(--lp-border);
+}
+
+/* FAQ accordion */
+.pricing-faq {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--lp-border);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.35rem 0.25rem;
+    font-family: var(--lp-font-display);
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--lp-ink);
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-question i {
+    color: var(--lp-ink-soft);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.faq-item.is-open .faq-question i {
+    transform: rotate(180deg);
+    color: #5c6b1e;
+}
+
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.35s ease;
+}
+
+.faq-answer p {
+    min-height: 0;
+    overflow: hidden;
+    color: var(--lp-ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.65;
+    padding: 0 0.25rem 0;
+    margin: 0;
+}
+
+.faq-item.is-open .faq-answer {
+    grid-template-rows: 1fr;
+}
+
+.faq-item.is-open .faq-answer p {
+    padding-bottom: 1.35rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .pricing-card-featured {
+        transform: none;
+        order: -1;
+    }
+
+    .pricing-card-featured:hover {
+        transform: translateY(-4px);
+    }
+}
+
+@media (max-width: 640px) {
+    .pricing-compare th,
+    .pricing-compare td {
+        padding: 0.85rem 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .faq-answer {
+        transition: none;
+    }
+}
