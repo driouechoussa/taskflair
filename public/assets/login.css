@@ -1,0 +1,373 @@
+/* Login page — built on the same design tokens as landing.css (.lp-body vars,
+   .lp-panel, .lp-btn, .lp-badge, .lp-avatar, .lp-float-card). Only the parts
+   unique to an auth screen (split layout, form fields, checkbox) live here. */
+
+.login-body {
+    background: var(--lp-cream);
+}
+
+.login-page {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left: dark brand panel, reuses .lp-panel for the same radial-glow card look */
+.login-brand {
+    flex: 0 0 44%;
+    display: flex;
+}
+
+.login-glow {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    width: 640px;
+    height: 640px;
+    transform: translateX(-50%);
+    background: radial-gradient(circle, rgba(215, 242, 74, 0.2), transparent 60%);
+    pointer-events: none;
+}
+
+.login-brand-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2.5rem;
+}
+
+.login-brand-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-brand-title {
+    font-family: var(--lp-font-display);
+    font-weight: 700;
+    font-size: clamp(2.75rem, 6vw, 4rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.25rem;
+    background: linear-gradient(180deg, #ffffff 0%, #b9bcae 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.login-brand-sub {
+    max-width: 380px;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+}
+
+.login-float-card.lp-float-card {
+    position: relative;
+    inset: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin-top: 2rem;
+}
+
+.login-brand-foot {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.85rem;
+}
+
+/* Right: light form side */
+.login-form-side {
+    flex: 1;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background: var(--lp-cream);
+}
+
+.login-form-topbar {
+    padding: 2rem 2.5rem 0;
+}
+
+.login-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--lp-ink-soft);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.login-back:hover {
+    color: var(--lp-ink);
+}
+
+.login-card {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    max-width: 420px;
+    padding: 2rem 2.5rem;
+}
+
+.login-card-logo {
+    display: none;
+    color: var(--lp-ink);
+    margin-bottom: 1.5rem;
+}
+
+.login-title {
+    font-family: var(--lp-font-display);
+    font-size: 1.85rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+    color: var(--lp-ink);
+}
+
+.login-sub {
+    color: var(--lp-ink-soft);
+    font-size: 0.95rem;
+    margin: 0 0 1.75rem;
+}
+
+.login-social-row {
+    display: flex;
+    gap: 0.85rem;
+    margin-bottom: 1.75rem;
+}
+
+.login-social-btn {
+    flex: 1;
+}
+
+.login-social-btn-dark.lp-btn-ghost {
+    background: var(--lp-white);
+    border-color: var(--lp-border);
+    color: var(--lp-ink);
+}
+
+.login-social-btn-dark.lp-btn-ghost:hover {
+    background: var(--lp-gray-100);
+    border-color: var(--lp-ink-soft);
+}
+
+.login-divider {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 1.75rem;
+    color: var(--lp-ink-soft);
+    font-size: 0.82rem;
+}
+
+.login-divider::before,
+.login-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--lp-border);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.login-field label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--lp-ink);
+    margin-bottom: 0.5rem;
+}
+
+.login-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    background: var(--lp-gray-100);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.login-input-wrap i {
+    color: var(--lp-ink-soft);
+    font-size: 0.9rem;
+}
+
+.login-input-wrap input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: var(--lp-ink);
+}
+
+.login-input-wrap input::placeholder {
+    color: #a3a69a;
+}
+
+.login-input-wrap:focus-within {
+    background: var(--lp-white);
+    border-color: var(--lp-lime-dark);
+    box-shadow: 0 0 0 3px rgba(215, 242, 74, 0.35);
+}
+
+.login-toggle-visibility {
+    background: none;
+    border: none;
+    color: var(--lp-ink-soft);
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.login-toggle-visibility:hover {
+    color: var(--lp-ink);
+}
+
+.login-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.88rem;
+}
+
+.login-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--lp-ink-soft);
+    cursor: pointer;
+    user-select: none;
+}
+
+.login-checkbox input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.login-checkbox-box {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 1.5px solid var(--lp-border);
+    background: var(--lp-white);
+    flex-shrink: 0;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.login-checkbox-box::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid var(--lp-black);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+.login-checkbox input:checked ~ .login-checkbox-box {
+    background: var(--lp-lime);
+    border-color: var(--lp-lime);
+}
+
+.login-checkbox input:checked ~ .login-checkbox-box::after {
+    opacity: 1;
+}
+
+.login-checkbox input:focus-visible ~ .login-checkbox-box {
+    box-shadow: 0 0 0 3px rgba(215, 242, 74, 0.35);
+}
+
+.login-forgot {
+    color: var(--lp-ink-soft);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.login-forgot:hover {
+    color: #5c6b1e;
+}
+
+.login-submit {
+    width: 100%;
+    margin-top: 0.25rem;
+}
+
+.login-status {
+    margin: 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--lp-ink-soft);
+    min-height: 1.2em;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.login-status.is-visible {
+    opacity: 1;
+}
+
+.login-footer-note {
+    text-align: center;
+    margin: 1.75rem 0 0;
+    font-size: 0.9rem;
+    color: var(--lp-ink-soft);
+}
+
+.login-footer-note a {
+    color: var(--lp-ink);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-footer-note a:hover {
+    color: #5c6b1e;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .login-brand {
+        display: none;
+    }
+
+    .login-card-logo {
+        display: flex;
+    }
+
+    .login-form-topbar {
+        padding: 1.5rem 1.5rem 0;
+    }
+
+    .login-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-social-row {
+        flex-direction: column;
+    }
+}
