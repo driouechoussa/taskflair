@@ -1,0 +1,28 @@
+/* Signup page — additions on top of login.css's shared auth-form styles. */
+
+.signup-hint {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--lp-ink-soft);
+}
+
+.signup-terms {
+    align-items: flex-start;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.signup-terms .login-checkbox-box {
+    margin-top: 2px;
+}
+
+.signup-terms a {
+    color: var(--lp-ink);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signup-terms a:hover {
+    color: #5c6b1e;
+}
