@@ -1,0 +1,149 @@
+/* How It Works page — built entirely on landing.css's shared tokens/components
+   (.lp-hero, .lp-section, .lp-mockup-row, .lp-cta-section, .lp-panel, etc).
+   Only the sticky step sub-nav, the step number mark, and the bullet list are new here. */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.lp-section[id] {
+    scroll-margin-top: 76px;
+}
+
+.how-it-works-hero {
+    padding-bottom: 4rem;
+}
+
+/* Sticky step sub-nav */
+.steps-subnav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(251, 251, 247, 0.88);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--lp-border);
+}
+
+.steps-subnav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.25rem;
+}
+
+.steps-subnav a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--lp-ink-soft);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.4rem 0.1rem;
+    transition: color 0.2s ease;
+}
+
+.steps-subnav-num {
+    font-family: var(--lp-font-display);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--lp-ink-soft);
+    transition: color 0.2s ease;
+}
+
+.steps-subnav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--lp-lime);
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+.steps-subnav a:hover {
+    color: var(--lp-ink);
+}
+
+.steps-subnav a.is-active {
+    color: var(--lp-ink);
+}
+
+.steps-subnav a.is-active .steps-subnav-num {
+    color: var(--lp-ink);
+}
+
+.steps-subnav a.is-active::after {
+    transform: scaleX(1);
+}
+
+/* Step sections */
+.how-step {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.step-number {
+    display: block;
+    font-family: var(--lp-font-display);
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--lp-lime-dark);
+    -webkit-text-stroke: 1px var(--lp-lime-dark);
+    margin-bottom: 0.5rem;
+}
+
+.step-points {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+.step-points li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    color: var(--lp-ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.step-points i {
+    margin-top: 0.3rem;
+    color: #5c6b1e;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .steps-subnav-inner {
+        padding: 0 1.25rem;
+        gap: 1.25rem;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .how-step {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}

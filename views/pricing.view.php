@@ -29,7 +29,7 @@
 
                 <ul class="lp-nav-links" id="lp-nav-links">
                     <li><a href=" @route('features') ">Features</a></li>
-                    <li><a href="@route('home')#how-it-works">Experience</a></li>
+                    <li><a href=" @route('how_it_works') ">how it works</a></li>
                     <li><a href=" @route('pricing') " class="is-active">Pricing</a></li>
                     <li><a href=" @route('about') ">About</a></li>
                     <li class="lp-mobile-only-link"><a href=" @route('login') ">Log In</a></li>

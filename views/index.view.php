@@ -28,7 +28,7 @@
 
                 <ul class="lp-nav-links" id="lp-nav-links">
                     <li><a href=" @route('features') ">Features</a></li>
-                    <li><a href="#how-it-works">Experience</a></li>
+                    <li><a href=" @route('how_it_works') ">Experience</a></li>
                     <li><a href=" @route('pricing') ">Pricing</a></li>
                     <li><a href=" @route('about') ">About</a></li>
                     <li class="lp-mobile-only-link"><a href=" @route('login') ">Log In</a></li>
@@ -359,7 +359,7 @@
                 <div class="lp-footer-col">
                     <h4>Product</h4>
                     <a href=" @route('features') ">Features</a>
-                    <a href="#how-it-works">Experience</a>
+                    <a href=" @route('how_it_works') ">Experience</a>
                     <a href=" @route('pricing') ">Pricing</a>
                     <a href=" @route('dashboard') ">Get Started</a>
                 </div>
