@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Why we built Buildilume — a fast, focused task and project workspace with no clutter and no busywork.">
+    <meta name="description" content="Why we built Buildilume — a fast, focused website builder with no clutter and no busywork.">
     <title>
         @site_name('About — Buildilume')
     </title>
@@ -31,11 +31,11 @@
                 </span>
 
                 <h1 class="lp-hero-title lp-reveal">
-                    <span class="lp-hero-title-line">LESS NOISE.</span>
-                    <span class="lp-hero-title-line">MORE FOCUS.</span>
+                    <span class="lp-hero-title-line">LESS CODE.</span>
+                    <span class="lp-hero-title-line">MORE CRAFT.</span>
                 </h1>
 
-                <p class="lp-hero-sub lp-reveal">Buildilume is a small, focused team building the task workspace we always wished existed — fast, calm, and free of clutter.</p>
+                <p class="lp-hero-sub lp-reveal">Buildilume is a small, focused team building the website builder we always wished existed — fast, calm, and free of clutter.</p>
             </div>
         </section>
     </div>
@@ -47,8 +47,8 @@
                     <div class="lp-mockup-text">
                         <span class="lp-eyebrow-sm">Our Story</span>
                         <h3>Why We Built Buildilume</h3>
-                        <p>Every task app we tried did too much. Dashboards, automations, and settings menus before you could add a single task. Buildilume started as a weekend itch — a place to plan the day without wading through everything else first.</p>
-                        <p>What began as a personal project turned into the workspace we'd always wanted: fast, calm, and genuinely focused on the work in front of you.</p>
+                        <p>Every website builder we tried did too much. Dashboards, plugins, and settings menus before you could publish a single page. Buildilume started as a weekend itch — a place to design a page without wading through everything else first.</p>
+                        <p>What began as a personal project turned into the builder we'd always wanted: fast, calm, and genuinely focused on the page in front of you.</p>
                     </div>
                     <div class="lp-mockup-visual">
                         <div class="lp-mock-window">
@@ -61,14 +61,14 @@
                             </div>
                             <div class="lp-mock-body">
                                 <div class="lp-mock-field">
-                                    <label>Today</label>
+                                    <label>Editing</label>
                                     <div class="lp-mock-input">Ship the About page copy</div>
                                 </div>
                                 <div class="lp-mock-chips">
                                     <span class="lp-mock-chip high">Focused</span>
                                     <span class="lp-mock-chip">1 of 3 today</span>
                                 </div>
-                                <div class="lp-mock-cta">Mark Complete</div>
+                                <div class="lp-mock-cta">Publish Page</div>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                     <div class="value-card lp-reveal">
                         <span class="value-icon"><i class="fas fa-bullseye"></i></span>
                         <h3>Focus Over Feature Bloat</h3>
-                        <p>We'd rather ship five things that work perfectly than fifty that half-work.</p>
+                        <p>We'd rather ship five widgets that work perfectly than fifty that half-work.</p>
                     </div>
                     <div class="value-card lp-reveal">
                         <span class="value-icon"><i class="fas fa-gauge-high"></i></span>
@@ -98,12 +98,12 @@
                     <div class="value-card lp-reveal">
                         <span class="value-icon"><i class="fas fa-users"></i></span>
                         <h3>Built for Real Workflows</h3>
-                        <p>We design around how teams actually work, not how a slide deck says they should.</p>
+                        <p>We design around how teams actually build sites, not how a slide deck says they should.</p>
                     </div>
                     <div class="value-card lp-reveal">
                         <span class="value-icon"><i class="fas fa-shield-halved"></i></span>
                         <h3>Respect Your Data</h3>
-                        <p>Your tasks are yours. No dark patterns, no selling your data — ever.</p>
+                        <p>Your pages are yours. No dark patterns, no selling your data — ever.</p>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                     </div>
                     <div class="about-stat">
                         <span class="about-stat-num">24,000+</span>
-                        <span class="about-stat-label">Tasks Completed</span>
+                        <span class="about-stat-label">Pages Published</span>
                     </div>
                     <div class="about-stat">
                         <span class="about-stat-num">2,000+</span>
@@ -126,7 +126,7 @@
                     </div>
                     <div class="about-stat">
                         <span class="about-stat-num">1</span>
-                        <span class="about-stat-label">Focused Workspace</span>
+                        <span class="about-stat-label">Focused Builder</span>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
     <footer class="lp-panel lp-footer-panel">
         <div class="lp-container">
             <div class="lp-footer-top">
-                <span class="lp-badge lp-badge-light">Ready to Get Organized?</span>
+                <span class="lp-badge lp-badge-light">Ready to Build Your Site?</span>
             </div>
 
             <a class="lp-footer-cta" href=" @route('dashboard') ">
@@ -164,13 +164,13 @@
                         <img src=" @get_static('media/logo.png') " alt="Buildilume logo">
                         <span>Buildilume</span>
                     </a>
-                    <p>Task management, simplified.</p>
+                    <p>Websites, simplified.</p>
                 </div>
 
                 <div class="lp-footer-col">
                     <h4>Product</h4>
                     <a href=" @route('features') ">Features</a>
-                    <a href=" @route('how_it_works') ">Experience</a>
+                    <a href=" @route('how_it_works') ">How it Works</a>
                     <a href=" @route('pricing') ">Pricing</a>
                     <a href=" @route('dashboard') ">Get Started</a>
                 </div>

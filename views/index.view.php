@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Buildilume is a fast, clean task and project management app — organize tasks, set priorities and due dates, and filter your way to focus.">
+    <meta name="description" content="Buildilume is a fast, clean no-code website builder — design pages, drop in widgets, and publish a polished site in minutes.">
     <title>
-        @site_name('Buildilume — Organize your work, focus on what matters')
+        @site_name('Buildilume — Build and publish your website, no code required')
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,19 +26,19 @@
             <div class="lp-container lp-hero-content">
                 <span class="lp-badge lp-reveal">
                     <span class="lp-badge-dot"></span>
-                    Task &amp; Project Management
+                    No-Code Website Builder
                 </span>
 
                 <h1 class="lp-hero-title lp-reveal">
-                    <span class="lp-hero-title-line">TASK</span>
-                    <span class="lp-hero-title-line">FLAIR</span>
+                    <span class="lp-hero-title-line">BUILD</span>
+                    <span class="lp-hero-title-line">ILUME</span>
                 </h1>
 
-                <p class="lp-hero-sub lp-reveal">Organize projects, prioritize tasks, and hit every deadline — Buildilume turns a messy to-do list into a calm, focused workflow in minutes.</p>
+                <p class="lp-hero-sub lp-reveal">Design pages, drop in widgets, and publish a polished website — Buildilume turns a blank canvas into a live site in minutes.</p>
 
                 <div class="lp-hero-buttons lp-reveal">
                     <a class="lp-btn lp-btn-lime lp-btn-lg" href=" @route('dashboard') ">
-                        Start For Free <i class="fas fa-arrow-right"></i>
+                        Start Building Free <i class="fas fa-arrow-right"></i>
                     </a>
                     <a class="lp-btn lp-btn-ghost lp-btn-lg" href="#how-it-works">
                         <span class="lp-play-dot"><i class="fas fa-play"></i></span>
@@ -50,7 +50,7 @@
                     <div class="lp-float-card lp-float-left" data-parallax>
                         <div class="lp-float-inner">
                             <div class="lp-float-head">
-                                <span>On Progress</span>
+                                <span>Site Progress</span>
                                 <i class="fas fa-ellipsis"></i>
                             </div>
                             <div class="lp-float-body">
@@ -76,16 +76,16 @@
                     <div class="lp-float-card lp-float-right" data-parallax>
                         <div class="lp-float-inner">
                             <div class="lp-float-head">
-                                <span>New Task</span>
+                                <span>New Page</span>
                                 <i class="fas fa-plus"></i>
                             </div>
                             <div class="lp-float-body">
-                                <div class="lp-float-input">Plan sprint kickoff</div>
+                                <div class="lp-float-input">Design homepage layout</div>
                                 <div class="lp-float-progress">
-                                    <span>Saving…</span>
+                                    <span>Publishing…</span>
                                     <div class="lp-float-progress-track"><div class="lp-float-progress-fill"></div></div>
                                 </div>
-                                <div class="lp-float-done"><i class="fas fa-check"></i> Task created</div>
+                                <div class="lp-float-done"><i class="fas fa-check"></i> Page published</div>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="lp-stat">
                         <span class="lp-stat-num" data-count="24000" data-suffix="+">0+</span>
-                        <span class="lp-stat-label">Tasks Completed</span>
+                        <span class="lp-stat-label">Pages Published</span>
                     </div>
                     <div class="lp-stat lp-stat-avatars">
                         <div class="lp-avatar-stack">
@@ -108,7 +108,7 @@
                         </div>
                         <div class="lp-stat-avatars-text">
                             <span class="lp-stat-num" data-count="1000" data-suffix="+">0+</span>
-                            <span class="lp-stat-label">Boosted Teams</span>
+                            <span class="lp-stat-label">Sites Launched</span>
                         </div>
                     </div>
                     <div class="lp-stat">
@@ -126,19 +126,19 @@
                 <div class="lp-collage" aria-hidden="true">
                     <div class="lp-tilt-card lp-tilt-1">
                         <span class="lp-tilt-icon"><i class="fas fa-list-check"></i></span>
-                        Smart Task Lists
+                        Drag &amp; Drop Builder
                     </div>
                     <div class="lp-tilt-card lp-tilt-2 lp-tilt-dark">
                         <span class="lp-tilt-icon"><i class="fas fa-bolt"></i></span>
-                        Auto&nbsp;-&nbsp;Prioritization
+                        Auto&nbsp;-&nbsp;Publishing
                     </div>
                     <div class="lp-tilt-card lp-tilt-3">
                         <span class="lp-tilt-icon"><i class="fas fa-diagram-project"></i></span>
-                        Team Templates
+                        Site Templates
                     </div>
                     <div class="lp-tilt-card lp-tilt-4 lp-tilt-dark">
                         <span class="lp-tilt-icon"><i class="fas fa-calendar-day"></i></span>
-                        Due&nbsp;-&nbsp;Date Alerts
+                        Publish&nbsp;-&nbsp;Date Scheduling
                     </div>
                     <div class="lp-tilt-card lp-tilt-5">
                         <span class="lp-tilt-icon"><i class="fas fa-magnifying-glass"></i></span>
@@ -149,7 +149,7 @@
                 <div class="lp-section-header">
                     <span class="lp-eyebrow">Features</span>
                     <h2>Explore the Amazing Features<br>You Can Start Using Today</h2>
-                    <p>Dive into a workspace built to keep your tasks, projects, and deadlines in perfect sync.</p>
+                    <p>Dive into a builder designed to keep your pages, widgets, and content in perfect sync.</p>
                     <a class="lp-btn lp-btn-outline-dark" href=" @route('features') ">See All Features</a>
                 </div>
 
@@ -159,8 +159,8 @@
                             <span class="lp-list-icon"><i class="fas fa-list-check"></i></span>
                             <span class="lp-list-index">01</span>
                         </div>
-                        <h3>Streamlined Task Workflows</h3>
-                        <p>Create, edit, and complete tasks in seconds with a clean, keyboard-friendly flow that keeps you moving.</p>
+                        <h3>Streamlined Page Workflows</h3>
+                        <p>Add, edit, and publish pages in seconds with a clean, block-based editor that keeps you moving.</p>
                         <a class="lp-learn-more" href="#how-it-works">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="lp-list-row lp-reveal">
@@ -168,8 +168,8 @@
                             <span class="lp-list-icon"><i class="fas fa-users"></i></span>
                             <span class="lp-list-index">02</span>
                         </div>
-                        <h3>Built for Growing Teams</h3>
-                        <p>Group related work into color-coded projects so nothing gets lost as your team scales up.</p>
+                        <h3>Built for Growing Sites</h3>
+                        <p>Group related pages and widgets into a shared theme so nothing gets lost as your site scales up.</p>
                         <a class="lp-learn-more" href="#how-it-works">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
 
                     <div class="lp-testimonial-track">
                         <blockquote class="lp-testimonial-slide is-active">
-                            <p>Buildilume keeps my whole sprint visible at a glance. I can't imagine going back to scattered spreadsheets and sticky notes!</p>
+                            <p>Buildilume keeps my whole site visible at a glance. I can't imagine going back to a clunky page builder and a pile of plugins!</p>
                             <footer>
                                 <span class="lp-avatar" style="--c1:#ffd76a;--c2:#ff9a5a;">MK</span>
                                 <div>
@@ -193,7 +193,7 @@
                             </footer>
                         </blockquote>
                         <blockquote class="lp-testimonial-slide">
-                            <p>Priority levels and due-date alerts alone cut our missed deadlines in half. It's the calmest our team has ever felt during a launch.</p>
+                            <p>Custom widgets and scheduled publishing alone cut our launch time in half. It's the calmest our team has ever felt during a redesign.</p>
                             <footer>
                                 <span class="lp-avatar" style="--c1:#8ee6c1;--c2:#33b28a;">SR</span>
                                 <div>
@@ -203,7 +203,7 @@
                             </footer>
                         </blockquote>
                         <blockquote class="lp-testimonial-slide">
-                            <p>The instant search and filters make triaging a hundred tasks feel like triaging ten. Genuinely changed how our team plans the week.</p>
+                            <p>The instant search and live CSS preview make managing a hundred pages feel like managing ten. Genuinely changed how our team ships the site.</p>
                             <footer>
                                 <span class="lp-avatar" style="--c1:#b7a6ff;--c2:#6a5bcf;">DL</span>
                                 <div>
@@ -227,15 +227,15 @@
             <div class="lp-container">
                 <div class="lp-section-header">
                     <span class="lp-eyebrow">Experience</span>
-                    <h2>Discover a Better Way to Work</h2>
-                    <p>Use every feature exactly how you need it — Buildilume adapts to the way your team already works.</p>
+                    <h2>Discover a Better Way to Build</h2>
+                    <p>Use every widget exactly how you need it — Buildilume adapts to the way your team already builds.</p>
                 </div>
 
                 <div class="lp-mockup-row lp-reveal">
                     <div class="lp-mockup-text">
-                        <span class="lp-eyebrow-sm">Smart Lists</span>
-                        <h3>Enjoy the Convenience of Modern Tools, Including Smart Lists</h3>
-                        <p>Countless teams have embraced Smart Lists as the go-to way to maximize focus and productivity, with instant filters for priority, project, and due date.</p>
+                        <span class="lp-eyebrow-sm">Smart Widgets</span>
+                        <h3>Enjoy the Convenience of Modern Tools, Including Smart Widgets</h3>
+                        <p>Countless teams have embraced Smart Widgets as the go-to way to maximize speed and consistency, with instant blocks for layout, content, and forms.</p>
                         <a class="lp-learn-more" href=" @route('dashboard') ">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="lp-mockup-visual">
@@ -244,19 +244,19 @@
                                 <span class="lp-mock-dot red"></span>
                                 <span class="lp-mock-dot yellow"></span>
                                 <span class="lp-mock-dot green"></span>
-                                <span>Create Task</span>
+                                <span>New Page</span>
                                 <i class="fas fa-ellipsis"></i>
                             </div>
                             <div class="lp-mock-body">
                                 <div class="lp-mock-field">
-                                    <label>Task name</label>
-                                    <div class="lp-mock-input">Design new onboarding flow</div>
+                                    <label>Page title</label>
+                                    <div class="lp-mock-input">Design new landing page</div>
                                 </div>
                                 <div class="lp-mock-chips">
-                                    <span class="lp-mock-chip high">High Priority</span>
-                                    <span class="lp-mock-chip">Due Fri</span>
+                                    <span class="lp-mock-chip high">Draft</span>
+                                    <span class="lp-mock-chip">Auto-saved</span>
                                 </div>
-                                <div class="lp-mock-cta">Add Task</div>
+                                <div class="lp-mock-cta">Add Page</div>
                             </div>
                         </div>
                     </div>
@@ -269,26 +269,26 @@
                                 <span class="lp-mock-dot red"></span>
                                 <span class="lp-mock-dot yellow"></span>
                                 <span class="lp-mock-dot green"></span>
-                                <span>Customize Workflow</span>
+                                <span>Customize Theme</span>
                                 <i class="fas fa-ellipsis"></i>
                             </div>
                             <div class="lp-mock-body">
                                 <div class="lp-mock-field">
-                                    <label>View</label>
-                                    <div class="lp-mock-select">Board <i class="fas fa-chevron-down"></i></div>
+                                    <label>Layout</label>
+                                    <div class="lp-mock-select">Grid <i class="fas fa-chevron-down"></i></div>
                                 </div>
                                 <div class="lp-mock-field">
-                                    <label>Group by</label>
-                                    <div class="lp-mock-select">Priority <i class="fas fa-chevron-down"></i></div>
+                                    <label>Accent color</label>
+                                    <div class="lp-mock-select">Lime <i class="fas fa-chevron-down"></i></div>
                                 </div>
-                                <div class="lp-mock-cta">Choose Template</div>
+                                <div class="lp-mock-cta">Apply Theme</div>
                             </div>
                         </div>
                     </div>
                     <div class="lp-mockup-text">
-                        <span class="lp-eyebrow-sm">Smart Lists</span>
-                        <h3>There Are Conveniences to Use — Smart Lists is One of Them</h3>
-                        <p>Switch between board, list, and calendar views instantly, and group by whatever matters most to your team this week.</p>
+                        <span class="lp-eyebrow-sm">Smart Widgets</span>
+                        <h3>There Are Conveniences to Use — Smart Widgets is One of Them</h3>
+                        <p>Switch between page, widget, and content views instantly, and theme your whole site with just a few clicks.</p>
                         <a class="lp-learn-more" href=" @route('dashboard') ">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -301,7 +301,7 @@
 
         <section class="lp-section lp-cta-section">
             <div class="lp-container lp-cta-inner lp-reveal">
-                <h2>Ready to Bring Flair to<br>Your Task List?</h2>
+                <h2>Ready to Bring Your<br>Site to Life?</h2>
                 <a class="lp-btn lp-btn-dark lp-btn-lg" href=" @route('dashboard') ">Create a Free Account</a>
                 <div class="lp-cta-avatars">
                     <span class="lp-avatar" style="--c1:#ffd76a;--c2:#ff9a5a;">JD</span>
@@ -317,7 +317,7 @@
     <footer class="lp-panel lp-footer-panel">
         <div class="lp-container">
             <div class="lp-footer-top">
-                <span class="lp-badge lp-badge-light">Ready to Get Organized?</span>
+                <span class="lp-badge lp-badge-light">Ready to Build Your Site?</span>
             </div>
 
             <a class="lp-footer-cta" href=" @route('dashboard') ">
@@ -331,13 +331,13 @@
                         <img src=" @get_static('media/logo.png') " alt="Buildilume logo">
                         <span>Buildilume</span>
                     </a>
-                    <p>Task management, simplified.</p>
+                    <p>Websites, simplified.</p>
                 </div>
 
                 <div class="lp-footer-col">
                     <h4>Product</h4>
                     <a href=" @route('features') ">Features</a>
-                    <a href=" @route('how_it_works') ">Experience</a>
+                    <a href=" @route('how_it_works') ">How it Works</a>
                     <a href=" @route('pricing') ">Pricing</a>
                     <a href=" @route('dashboard') ">Get Started</a>
                 </div>

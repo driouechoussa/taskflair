@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Create your free Buildilume account — organize tasks, set priorities and due dates, and filter your way to focus.">
+    <meta name="description" content="Create your free Buildilume account — design pages, drop in widgets, and publish your website in minutes.">
     <title>
         @site_name('Sign Up — Buildilume')
     </title>
@@ -31,25 +31,25 @@
                 <div class="login-brand-mid">
                     <span class="lp-badge lp-reveal">
                         <span class="lp-badge-dot"></span>
-                        Task &amp; Project Management
+                        No-Code Website Builder
                     </span>
 
                     <h1 class="login-brand-title lp-reveal">Start<br>Building.</h1>
-                    <p class="login-brand-sub lp-reveal">Create your free account and turn a messy to-do list into a calm, focused workflow — set up in under a minute.</p>
+                    <p class="login-brand-sub lp-reveal">Create your free account and turn a blank canvas into a polished, published website — set up in under a minute.</p>
 
                     <div class="lp-float-card login-float-card">
                         <div class="lp-float-inner">
                             <div class="lp-float-head">
-                                <span>New Task</span>
+                                <span>New Page</span>
                                 <i class="fas fa-plus"></i>
                             </div>
                             <div class="lp-float-body">
-                                <div class="lp-float-input">Plan sprint kickoff</div>
+                                <div class="lp-float-input">Design homepage layout</div>
                                 <div class="lp-float-progress">
-                                    <span>Saving…</span>
+                                    <span>Publishing…</span>
                                     <div class="lp-float-progress-track"><div class="lp-float-progress-fill"></div></div>
                                 </div>
-                                <div class="lp-float-done"><i class="fas fa-check"></i> Task created</div>
+                                <div class="lp-float-done"><i class="fas fa-check"></i> Page published</div>
                             </div>
                         </div>
                     </div>

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Set up your Buildilume workspace in under a minute.">
+    <meta name="description" content="Set up your Buildilume site in under a minute.">
     <title>
-        @site_name('Set Up Your Workspace — Buildilume')
+        @site_name('Set Up Your Site — Buildilume')
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,8 +50,8 @@
                                 <span class="lp-badge-dot"></span>
                                 Quick Setup
                             </div>
-                            <h1 class="onboarding-title">Let's set up<br>your workspace.</h1>
-                            <p class="onboarding-sub">A few quick questions to personalize Buildilume for how you work — this takes about a minute.</p>
+                            <h1 class="onboarding-title">Let's set up<br>your site.</h1>
+                            <p class="onboarding-sub">A few quick questions to personalize Buildilume for how you build — this takes about a minute.</p>
 
                             <div class="lp-float-card onboarding-float-card">
                                 <div class="lp-float-inner">
@@ -128,16 +128,16 @@
                     <div class="onboarding-step" data-step="3">
                         <div class="onboarding-step-inner">
                             <span class="lp-eyebrow-sm onboarding-eyebrow-light">Your focus</span>
-                            <h2 class="onboarding-heading">What do you want to organize?</h2>
+                            <h2 class="onboarding-heading">What do you want to build?</h2>
                             <p class="onboarding-sub onboarding-sub-light">Pick as many as you like — Buildilume adapts to fit.</p>
 
                             <div class="onboarding-chip-row onboarding-chip-row-multi" data-group="focus" data-multi="true">
-                                <button type="button" class="onboarding-chip" data-value="Tasks"><i class="fas fa-list-check"></i> Tasks</button>
-                                <button type="button" class="onboarding-chip" data-value="Projects"><i class="fas fa-diagram-project"></i> Projects</button>
-                                <button type="button" class="onboarding-chip" data-value="Sprints"><i class="fas fa-bolt"></i> Sprints</button>
-                                <button type="button" class="onboarding-chip" data-value="Personal Goals"><i class="fas fa-bullseye"></i> Personal Goals</button>
+                                <button type="button" class="onboarding-chip" data-value="Landing Pages"><i class="fas fa-list-check"></i> Landing Pages</button>
+                                <button type="button" class="onboarding-chip" data-value="Blog"><i class="fas fa-diagram-project"></i> Blog</button>
+                                <button type="button" class="onboarding-chip" data-value="Portfolio"><i class="fas fa-bolt"></i> Portfolio</button>
+                                <button type="button" class="onboarding-chip" data-value="Online Store"><i class="fas fa-bullseye"></i> Online Store</button>
                                 <button type="button" class="onboarding-chip" data-value="Content Calendar"><i class="fas fa-calendar-day"></i> Content Calendar</button>
-                                <button type="button" class="onboarding-chip" data-value="Client Work"><i class="fas fa-handshake"></i> Client Work</button>
+                                <button type="button" class="onboarding-chip" data-value="Client Sites"><i class="fas fa-handshake"></i> Client Sites</button>
                             </div>
                         </div>
                     </div>
@@ -146,15 +146,15 @@
                     <div class="onboarding-step" data-step="4">
                         <div class="onboarding-step-inner onboarding-step-narrow">
                             <span class="lp-eyebrow-sm onboarding-eyebrow-light">Almost there</span>
-                            <h2 class="onboarding-heading">Name your workspace.</h2>
+                            <h2 class="onboarding-heading">Name your site.</h2>
                             <p class="onboarding-sub onboarding-sub-light">You can invite teammates and change this anytime from settings.</p>
 
                             <div class="onboarding-input-wrap">
                                 <i class="fas fa-building"></i>
                                 <input type="text" id="onboarding-workspace-name" placeholder="e.g. Acme Team" maxlength="40" autocomplete="off">
                             </div>
-                            <p class="onboarding-slug-preview">buildilume.app/<span id="onboarding-slug-value">your-workspace</span></p>
-                            <p class="onboarding-error" data-error-for="4">Give your workspace a name to continue.</p>
+                            <p class="onboarding-slug-preview">buildilume.app/<span id="onboarding-slug-value">your-site</span></p>
+                            <p class="onboarding-error" data-error-for="4">Give your site a name to continue.</p>
                         </div>
                     </div>
 
@@ -163,7 +163,7 @@
                         <div class="onboarding-step-inner onboarding-complete">
                             <div class="onboarding-check-badge"><i class="fas fa-check"></i></div>
                             <h1 class="onboarding-title">You're all set!</h1>
-                            <p class="onboarding-sub">Here's what we set up for <strong id="onboarding-summary-name">your workspace</strong>:</p>
+                            <p class="onboarding-sub">Here's what we set up for <strong id="onboarding-summary-name">your site</strong>:</p>
 
                             <ul class="onboarding-summary">
                                 <li><i class="fas fa-user"></i> Role — <span id="onboarding-summary-role">—</span></li>

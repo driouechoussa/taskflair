@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Every feature Buildilume ships with — planning, collaboration, automation, and insight — all in one focused workspace.">
+    <meta name="description" content="Every feature Buildilume ships with — building, collaboration, automation, and insight — all in one focused website builder.">
     <title>
         @site_name('Features — Buildilume')
     </title>
@@ -35,7 +35,7 @@
                     <span class="lp-hero-title-line">FOCUS.</span>
                 </h1>
 
-                <p class="lp-hero-sub lp-reveal">Every tool Buildilume ships with, organized by what it helps you do — planning, collaboration, automation, and insight.</p>
+                <p class="lp-hero-sub lp-reveal">Every tool Buildilume ships with, organized by what it helps you do — building, collaboration, automation, and insight.</p>
 
                 <div class="lp-hero-buttons lp-reveal">
                     <a class="lp-btn lp-btn-lime lp-btn-lg" href=" @route('dashboard') ">
@@ -53,7 +53,7 @@
         <div class="features-categories">
         <nav class="features-subnav" id="features-subnav">
             <div class="features-subnav-inner">
-                <a href="#planning">Planning</a>
+                <a href="#planning">Building</a>
                 <a href="#collaboration">Collaboration</a>
                 <a href="#automation">Automation</a>
                 <a href="#insights">Insights</a>
@@ -63,26 +63,26 @@
         <section class="lp-section" id="planning">
             <div class="lp-container">
                 <div class="lp-section-header">
-                    <span class="lp-eyebrow">Planning</span>
-                    <h2>Lay Out the Work<br>Before You Start It</h2>
-                    <p>Turn a wall of to-dos into a structure your whole team can follow.</p>
+                    <span class="lp-eyebrow">Building</span>
+                    <h2>Lay Out Your Site<br>Before You Launch It</h2>
+                    <p>Turn a blank canvas into a structure your whole team can follow.</p>
                 </div>
 
                 <div class="feature-grid">
                     <div class="feature-card lp-reveal">
                         <span class="feature-icon"><i class="fas fa-list-check"></i></span>
-                        <h3>Smart Task Lists</h3>
-                        <p>Create, edit, and complete tasks in seconds with a clean, keyboard-friendly workflow.</p>
+                        <h3>Drag-and-Drop Builder</h3>
+                        <p>Add, edit, and publish pages in seconds with a clean, block-based workflow.</p>
                     </div>
                     <div class="feature-card lp-reveal">
                         <span class="feature-icon"><i class="fas fa-diagram-project"></i></span>
-                        <h3>Project Grouping</h3>
-                        <p>Organize related tasks into color-coded projects so nothing gets lost in the noise.</p>
+                        <h3>Widget Library</h3>
+                        <p>Organize reusable widgets into color-coded categories so nothing gets lost in the noise.</p>
                     </div>
                     <div class="feature-card lp-reveal">
                         <span class="feature-icon"><i class="fas fa-calendar-day"></i></span>
-                        <h3>Due Date Tracking</h3>
-                        <p>Never miss a deadline with due dates, overdue alerts, and at-a-glance filters.</p>
+                        <h3>Scheduled Publishing</h3>
+                        <p>Never miss a launch window with scheduled publishing, drafts, and at-a-glance filters.</p>
                     </div>
                 </div>
             </div>
@@ -99,18 +99,18 @@
                 <div class="feature-grid">
                     <div class="feature-card lp-reveal">
                         <span class="feature-icon"><i class="fas fa-people-group"></i></span>
-                        <h3>Team Templates</h3>
-                        <p>Spin up a new project from proven templates your whole team can reuse.</p>
+                        <h3>Site Templates</h3>
+                        <p>Spin up a new page from proven templates your whole team can reuse.</p>
                     </div>
                     <div class="feature-card lp-reveal">
                         <span class="feature-icon"><i class="fas fa-building"></i></span>
-                        <h3>Shared Workspaces</h3>
-                        <p>Give every project its own space with shared visibility for the whole team.</p>
+                        <h3>Shared Sites</h3>
+                        <p>Give every project its own site with shared visibility for the whole team.</p>
                     </div>
                     <div class="feature-card lp-reveal">
                         <span class="feature-icon"><i class="fas fa-comments"></i></span>
                         <h3>Comments &amp; Mentions</h3>
-                        <p>Discuss tasks in context and pull teammates in with an @mention.</p>
+                        <p>Discuss pages in context and pull teammates in with an @mention.</p>
                     </div>
                 </div>
             </div>
@@ -121,32 +121,32 @@
                 <div class="lp-section-header">
                     <span class="lp-eyebrow">Automation</span>
                     <h2>Let Buildilume<br>Handle the Busywork</h2>
-                    <p>The routine parts of task management, running quietly in the background.</p>
+                    <p>The routine parts of running a website, running quietly in the background.</p>
                 </div>
 
                 <div class="feature-grid">
                     <div class="feature-card lp-reveal">
                         <span class="feature-icon"><i class="fas fa-bolt"></i></span>
-                        <h3>Auto-Prioritization</h3>
-                        <p>Buildilume nudges the right task to the top based on urgency and workload.</p>
+                        <h3>Smart Publishing Queue</h3>
+                        <p>Buildilume nudges the right page to publish based on urgency and traffic.</p>
                     </div>
                     <div class="feature-card lp-reveal">
                         <span class="feature-icon"><i class="fas fa-rotate"></i></span>
-                        <h3>Recurring Tasks</h3>
-                        <p>Set it once — daily, weekly, or custom schedules keep repeating work off your plate.</p>
+                        <h3>Recurring Content</h3>
+                        <p>Set it once — daily, weekly, or custom schedules keep repeating content off your plate.</p>
                     </div>
                     <div class="feature-card lp-reveal">
                         <span class="feature-icon"><i class="fas fa-bell"></i></span>
                         <h3>Smart Reminders</h3>
-                        <p>Get nudged before something slips, not after it's already late.</p>
+                        <p>Get nudged before a draft goes stale, not after it's already outdated.</p>
                     </div>
                 </div>
 
                 <div class="lp-mockup-row lp-reveal features-spotlight">
                     <div class="lp-mockup-text">
                         <span class="lp-eyebrow-sm">Automation in Action</span>
-                        <h3>Rules That Reprioritize Your Day For You</h3>
-                        <p>Define a rule once — "due within 24 hours" or "blocked for 2+ days" — and Buildilume automatically resurfaces it to the top of your list.</p>
+                        <h3>Rules That Keep Your Site Fresh For You</h3>
+                        <p>Define a rule once — "draft older than 7 days" or "traffic spike detected" — and Buildilume automatically resurfaces it to the top of your queue.</p>
                         <a class="lp-learn-more" href=" @route('dashboard') ">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="lp-mockup-visual">
@@ -161,15 +161,15 @@
                             <div class="lp-mock-body">
                                 <div class="lp-mock-field">
                                     <label>When</label>
-                                    <div class="lp-mock-select">Due within 24 hours <i class="fas fa-chevron-down"></i></div>
+                                    <div class="lp-mock-select">Draft older than 7 days <i class="fas fa-chevron-down"></i></div>
                                 </div>
                                 <div class="lp-mock-field">
                                     <label>Then</label>
-                                    <div class="lp-mock-select">Move to top of list <i class="fas fa-chevron-down"></i></div>
+                                    <div class="lp-mock-select">Flag for review <i class="fas fa-chevron-down"></i></div>
                                 </div>
                                 <div class="lp-mock-chips">
                                     <span class="lp-mock-chip high">Active</span>
-                                    <span class="lp-mock-chip">12 tasks affected</span>
+                                    <span class="lp-mock-chip">12 pages affected</span>
                                 </div>
                                 <div class="lp-mock-cta">Save Rule</div>
                             </div>
@@ -190,18 +190,18 @@
                 <div class="feature-grid">
                     <div class="feature-card lp-reveal">
                         <span class="feature-icon"><i class="fas fa-chart-line"></i></span>
-                        <h3>Progress Analytics</h3>
-                        <p>See completion trends and burndown at a glance, per project or team-wide.</p>
+                        <h3>Traffic Analytics</h3>
+                        <p>See visitor trends and page performance at a glance, per page or site-wide.</p>
                     </div>
                     <div class="feature-card lp-reveal">
                         <span class="feature-icon"><i class="fas fa-scale-balanced"></i></span>
-                        <h3>Workload Reports</h3>
-                        <p>Spot overloaded teammates before they burn out, not after.</p>
+                        <h3>Content Reports</h3>
+                        <p>Spot stale or underperforming pages before they hurt your site.</p>
                     </div>
                     <div class="feature-card lp-reveal">
                         <span class="feature-icon"><i class="fas fa-clock-rotate-left"></i></span>
                         <h3>Activity Timeline</h3>
-                        <p>A complete, searchable history of every change made to a task.</p>
+                        <p>A complete, searchable history of every change made to a page.</p>
                     </div>
                 </div>
             </div>
@@ -226,7 +226,7 @@
     <footer class="lp-panel lp-footer-panel">
         <div class="lp-container">
             <div class="lp-footer-top">
-                <span class="lp-badge lp-badge-light">Ready to Get Organized?</span>
+                <span class="lp-badge lp-badge-light">Ready to Build Your Site?</span>
             </div>
 
             <a class="lp-footer-cta" href=" @route('dashboard') ">
@@ -240,13 +240,13 @@
                         <img src=" @get_static('media/logo.png') " alt="Buildilume logo">
                         <span>Buildilume</span>
                     </a>
-                    <p>Task management, simplified.</p>
+                    <p>Websites, simplified.</p>
                 </div>
 
                 <div class="lp-footer-col">
                     <h4>Product</h4>
                     <a href=" @route('features') ">Features</a>
-                    <a href=" @route('how_it_works') ">Experience</a>
+                    <a href=" @route('how_it_works') ">How it Works</a>
                     <a href=" @route('pricing') ">Pricing</a>
                     <a href=" @route('dashboard') ">Get Started</a>
                 </div>

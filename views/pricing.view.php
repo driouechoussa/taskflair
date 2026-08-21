@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simple, fair pricing for Buildilume — start free, upgrade when your team grows. No hidden fees, cancel anytime.">
+    <meta name="description" content="Simple, fair pricing for Buildilume's website builder — start free, upgrade when your site grows. No hidden fees, cancel anytime.">
     <title>
         @site_name('Pricing — Buildilume')
     </title>
@@ -55,7 +55,7 @@
                     <div class="pricing-card lp-reveal">
                         <div class="pricing-card-header">
                             <h3>Free</h3>
-                            <p>For individuals getting organized.</p>
+                            <p>For individuals building their first site.</p>
                         </div>
                         <div class="pricing-price">
                             <span class="pricing-price-amount" data-monthly="0" data-yearly="0">$0</span>
@@ -64,9 +64,9 @@
                         <p class="pricing-price-note">Free forever</p>
                         <a class="lp-btn lp-btn-outline-dark pricing-cta" href=" @route('dashboard') ">Start For Free</a>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Up to 3 projects</li>
-                            <li><i class="fas fa-check"></i> Unlimited tasks</li>
-                            <li><i class="fas fa-check"></i> Priority levels &amp; due dates</li>
+                            <li><i class="fas fa-check"></i> Up to 3 pages</li>
+                            <li><i class="fas fa-check"></i> Unlimited widgets</li>
+                            <li><i class="fas fa-check"></i> Custom themes &amp; scheduling</li>
                             <li><i class="fas fa-check"></i> Light &amp; dark mode</li>
                         </ul>
                     </div>
@@ -85,8 +85,8 @@
                         <a class="lp-btn lp-btn-lime pricing-cta" href=" @route('dashboard') ">Start Free Trial</a>
                         <ul class="pricing-features">
                             <li><i class="fas fa-check"></i> Everything in Free</li>
-                            <li><i class="fas fa-check"></i> Unlimited projects</li>
-                            <li><i class="fas fa-check"></i> Team templates</li>
+                            <li><i class="fas fa-check"></i> Unlimited pages</li>
+                            <li><i class="fas fa-check"></i> Site templates</li>
                             <li><i class="fas fa-check"></i> Automation rules</li>
                             <li><i class="fas fa-check"></i> Advanced search &amp; filters</li>
                         </ul>
@@ -105,7 +105,7 @@
                         <a class="lp-btn lp-btn-outline-dark pricing-cta" href=" @route('dashboard') ">Start Free Trial</a>
                         <ul class="pricing-features">
                             <li><i class="fas fa-check"></i> Everything in Pro</li>
-                            <li><i class="fas fa-check"></i> Workload reports &amp; analytics</li>
+                            <li><i class="fas fa-check"></i> Traffic reports &amp; analytics</li>
                             <li><i class="fas fa-check"></i> Admin roles &amp; permissions</li>
                             <li><i class="fas fa-check"></i> Priority support</li>
                         </ul>
@@ -133,13 +133,13 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="pricing-compare-feature-col">Projects</td>
+                                <td class="pricing-compare-feature-col">Pages</td>
                                 <td>Up to 3</td>
                                 <td class="pricing-compare-featured-col">Unlimited</td>
                                 <td>Unlimited</td>
                             </tr>
                             <tr>
-                                <td class="pricing-compare-feature-col">Team templates</td>
+                                <td class="pricing-compare-feature-col">Site templates</td>
                                 <td><i class="fas fa-minus"></i></td>
                                 <td class="pricing-compare-featured-col"><i class="fas fa-check"></i></td>
                                 <td><i class="fas fa-check"></i></td>
@@ -151,7 +151,7 @@
                                 <td><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td class="pricing-compare-feature-col">Workload analytics</td>
+                                <td class="pricing-compare-feature-col">Traffic analytics</td>
                                 <td><i class="fas fa-minus"></i></td>
                                 <td class="pricing-compare-featured-col"><i class="fas fa-minus"></i></td>
                                 <td><i class="fas fa-check"></i></td>
@@ -233,7 +233,7 @@
 
         <section class="lp-section lp-cta-section">
             <div class="lp-container lp-cta-inner lp-reveal">
-                <h2>Ready to Bring Flair to<br>Your Task List?</h2>
+                <h2>Ready to Bring Your<br>Site to Life?</h2>
                 <a class="lp-btn lp-btn-dark lp-btn-lg" href=" @route('dashboard') ">Create a Free Account</a>
                 <div class="lp-cta-avatars">
                     <span class="lp-avatar" style="--c1:#ffd76a;--c2:#ff9a5a;">JD</span>
@@ -249,7 +249,7 @@
     <footer class="lp-panel lp-footer-panel">
         <div class="lp-container">
             <div class="lp-footer-top">
-                <span class="lp-badge lp-badge-light">Ready to Get Organized?</span>
+                <span class="lp-badge lp-badge-light">Ready to Build Your Site?</span>
             </div>
 
             <a class="lp-footer-cta" href=" @route('dashboard') ">
@@ -263,7 +263,7 @@
                         <img src=" @get_static('media/logo.png') " alt="Buildilume logo">
                         <span>Buildilume</span>
                     </a>
-                    <p>Task management, simplified.</p>
+                    <p>Websites, simplified.</p>
                 </div>
 
                 <div class="lp-footer-col">

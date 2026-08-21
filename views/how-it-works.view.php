@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="See how Buildilume works — from creating your workspace to automating your busywork, in four simple steps.">
+    <meta name="description" content="See how Buildilume works — from creating your site to automating your busywork, in four simple steps.">
     <title>
         @site_name('How It Works — Buildilume')
     </title>
@@ -35,7 +35,7 @@
                     <span class="lp-hero-title-line">TO CLARITY.</span>
                 </h1>
 
-                <p class="lp-hero-sub lp-reveal">From your first login to your first automated rule, here's exactly how Buildilume takes a messy to-do list and turns it into a calm, focused workflow.</p>
+                <p class="lp-hero-sub lp-reveal">From your first login to your first published page, here's exactly how Buildilume takes a blank canvas and turns it into a live, polished website.</p>
 
                 <div class="lp-hero-buttons lp-reveal">
                     <a class="lp-btn lp-btn-lime lp-btn-lg" href=" @route('dashboard') ">
@@ -66,12 +66,12 @@
                     <div class="lp-mockup-text">
                         <span class="step-number">01</span>
                         <span class="lp-eyebrow-sm">Get Started</span>
-                        <h3>Create Your Free Workspace in Seconds</h3>
-                        <p>No credit card, no setup calls. Sign up with your email, name your workspace, and you're already looking at an empty board ready for your first project.</p>
+                        <h3>Create Your Free Site in Seconds</h3>
+                        <p>No credit card, no setup calls. Sign up with your email, name your site, and you're already looking at an empty canvas ready for your first page.</p>
                         <ul class="step-points">
                             <li><i class="fas fa-check"></i> Free forever plan, upgrade only when you outgrow it</li>
                             <li><i class="fas fa-check"></i> Invite teammates right from onboarding</li>
-                            <li><i class="fas fa-check"></i> Import existing tasks from a spreadsheet</li>
+                            <li><i class="fas fa-check"></i> Import existing content from a spreadsheet or CMS export</li>
                         </ul>
                         <a class="lp-learn-more" href=" @route('signup') ">Create an Account <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -81,13 +81,13 @@
                                 <span class="lp-mock-dot red"></span>
                                 <span class="lp-mock-dot yellow"></span>
                                 <span class="lp-mock-dot green"></span>
-                                <span>Create Workspace</span>
+                                <span>Create Site</span>
                                 <i class="fas fa-ellipsis"></i>
                             </div>
                             <div class="lp-mock-body">
                                 <div class="lp-mock-field">
-                                    <label>Workspace name</label>
-                                    <div class="lp-mock-input">Acme Product Team</div>
+                                    <label>Site name</label>
+                                    <div class="lp-mock-input">Acme Marketing Site</div>
                                 </div>
                                 <div class="lp-mock-field">
                                     <label>Work email</label>
@@ -114,37 +114,37 @@
                                 <span class="lp-mock-dot red"></span>
                                 <span class="lp-mock-dot yellow"></span>
                                 <span class="lp-mock-dot green"></span>
-                                <span>Create Task</span>
+                                <span>New Page</span>
                                 <i class="fas fa-ellipsis"></i>
                             </div>
                             <div class="lp-mock-body">
                                 <div class="lp-mock-field">
-                                    <label>Task name</label>
-                                    <div class="lp-mock-input">Design new onboarding flow</div>
+                                    <label>Page title</label>
+                                    <div class="lp-mock-input">Design new landing page</div>
                                 </div>
                                 <div class="lp-mock-field">
-                                    <label>Project</label>
-                                    <div class="lp-mock-select">Q3 Product Launch <i class="fas fa-chevron-down"></i></div>
+                                    <label>Site</label>
+                                    <div class="lp-mock-select">Marketing Site <i class="fas fa-chevron-down"></i></div>
                                 </div>
                                 <div class="lp-mock-chips">
-                                    <span class="lp-mock-chip high">High Priority</span>
-                                    <span class="lp-mock-chip">Due Fri</span>
+                                    <span class="lp-mock-chip high">Draft</span>
+                                    <span class="lp-mock-chip">Publish Fri</span>
                                 </div>
-                                <div class="lp-mock-cta">Add Task</div>
+                                <div class="lp-mock-cta">Add Page</div>
                             </div>
                         </div>
                     </div>
                     <div class="lp-mockup-text">
                         <span class="step-number">02</span>
-                        <span class="lp-eyebrow-sm">Build Your Board</span>
-                        <h3>Set Up Projects Exactly How You Work</h3>
-                        <p>Group tasks into color-coded projects, add due dates and priority levels, then switch between board, list, or calendar view — whichever fits the moment.</p>
+                        <span class="lp-eyebrow-sm">Build Your Site</span>
+                        <h3>Set Up Pages Exactly How You Want</h3>
+                        <p>Group pages into a clean site structure, add layouts and themes, then switch between page, widget, or content view — whichever fits the moment.</p>
                         <ul class="step-points">
-                            <li><i class="fas fa-check"></i> Start from a blank board or a ready-made template</li>
-                            <li><i class="fas fa-check"></i> Drag tasks between board, list, and calendar views</li>
-                            <li><i class="fas fa-check"></i> Group and filter by priority, project, or owner</li>
+                            <li><i class="fas fa-check"></i> Start from a blank page or a ready-made template</li>
+                            <li><i class="fas fa-check"></i> Drag widgets between page, section, and content views</li>
+                            <li><i class="fas fa-check"></i> Group and filter by status, page, or owner</li>
                         </ul>
-                        <a class="lp-learn-more" href="@route('features')#planning">See Planning Features <i class="fas fa-arrow-right"></i></a>
+                        <a class="lp-learn-more" href="@route('features')#planning">See Building Features <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -157,11 +157,11 @@
                         <span class="step-number">03</span>
                         <span class="lp-eyebrow-sm">Automate</span>
                         <h3>Let Buildilume Handle the Busywork</h3>
-                        <p>Define a rule once — "due within 24 hours" or "blocked for 2+ days" — and Buildilume automatically resurfaces it to the top of the right list, no manual triage required.</p>
+                        <p>Define a rule once — "draft older than 7 days" or "traffic spike detected" — and Buildilume automatically resurfaces it to the top of the right queue, no manual triage required.</p>
                         <ul class="step-points">
-                            <li><i class="fas fa-check"></i> Auto-prioritize tasks based on urgency and workload</li>
-                            <li><i class="fas fa-check"></i> Set recurring tasks on daily, weekly, or custom schedules</li>
-                            <li><i class="fas fa-check"></i> Get reminders before something slips, not after</li>
+                            <li><i class="fas fa-check"></i> Auto-prioritize pages based on urgency and traffic</li>
+                            <li><i class="fas fa-check"></i> Set recurring content on daily, weekly, or custom schedules</li>
+                            <li><i class="fas fa-check"></i> Get reminders before a draft goes stale, not after</li>
                         </ul>
                         <a class="lp-learn-more" href="@route('features')#automation">See Automation Features <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -177,15 +177,15 @@
                             <div class="lp-mock-body">
                                 <div class="lp-mock-field">
                                     <label>When</label>
-                                    <div class="lp-mock-select">Due within 24 hours <i class="fas fa-chevron-down"></i></div>
+                                    <div class="lp-mock-select">Draft older than 7 days <i class="fas fa-chevron-down"></i></div>
                                 </div>
                                 <div class="lp-mock-field">
                                     <label>Then</label>
-                                    <div class="lp-mock-select">Move to top of list <i class="fas fa-chevron-down"></i></div>
+                                    <div class="lp-mock-select">Flag for review <i class="fas fa-chevron-down"></i></div>
                                 </div>
                                 <div class="lp-mock-chips">
                                     <span class="lp-mock-chip high">Active</span>
-                                    <span class="lp-mock-chip">12 tasks affected</span>
+                                    <span class="lp-mock-chip">12 pages affected</span>
                                 </div>
                                 <div class="lp-mock-cta">Save Rule</div>
                             </div>
@@ -210,10 +210,10 @@
                             <div class="lp-mock-body">
                                 <div class="lp-mock-field">
                                     <label>This week</label>
-                                    <div class="lp-mock-select">12 tasks completed <i class="fas fa-chevron-down"></i></div>
+                                    <div class="lp-mock-select">12 pages published <i class="fas fa-chevron-down"></i></div>
                                 </div>
                                 <div class="lp-mock-field">
-                                    <label>Team velocity</label>
+                                    <label>Site traffic</label>
                                     <div class="lp-mock-select">+18% vs last week <i class="fas fa-chevron-down"></i></div>
                                 </div>
                                 <div class="lp-mock-chips">
@@ -228,11 +228,11 @@
                         <span class="step-number">04</span>
                         <span class="lp-eyebrow-sm">Track Progress</span>
                         <h3>Know Exactly Where Everything Stands</h3>
-                        <p>Completion trends, burndown charts, and workload reports update themselves — no status meeting required, and no teammate quietly buried in work.</p>
+                        <p>Traffic trends, publishing charts, and content reports update themselves — no status meeting required, and no page quietly going stale.</p>
                         <ul class="step-points">
-                            <li><i class="fas fa-check"></i> See progress at a glance, per project or team-wide</li>
-                            <li><i class="fas fa-check"></i> Spot overloaded teammates before they burn out</li>
-                            <li><i class="fas fa-check"></i> A searchable activity timeline for every task</li>
+                            <li><i class="fas fa-check"></i> See performance at a glance, per page or site-wide</li>
+                            <li><i class="fas fa-check"></i> Spot stale or underperforming pages before they hurt your site</li>
+                            <li><i class="fas fa-check"></i> A searchable activity timeline for every page</li>
                         </ul>
                         <a class="lp-learn-more" href="@route('features')#insights">See Insights Features <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -258,7 +258,7 @@
     <footer class="lp-panel lp-footer-panel">
         <div class="lp-container">
             <div class="lp-footer-top">
-                <span class="lp-badge lp-badge-light">Ready to Get Organized?</span>
+                <span class="lp-badge lp-badge-light">Ready to Build Your Site?</span>
             </div>
 
             <a class="lp-footer-cta" href=" @route('dashboard') ">
@@ -272,13 +272,13 @@
                         <img src=" @get_static('media/logo.png') " alt="Buildilume logo">
                         <span>Buildilume</span>
                     </a>
-                    <p>Task management, simplified.</p>
+                    <p>Websites, simplified.</p>
                 </div>
 
                 <div class="lp-footer-col">
                     <h4>Product</h4>
                     <a href=" @route('features') ">Features</a>
-                    <a href=" @route('how_it_works') ">Experience</a>
+                    <a href=" @route('how_it_works') ">How it Works</a>
                     <a href=" @route('pricing') ">Pricing</a>
                     <a href=" @route('dashboard') ">Get Started</a>
                 </div>

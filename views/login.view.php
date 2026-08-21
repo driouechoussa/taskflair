@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Log in to Buildilume — organize tasks, set priorities and due dates, and filter your way to focus.">
+    <meta name="description" content="Log in to Buildilume — design pages, drop in widgets, and publish your website in minutes.">
     <title>
         @site_name('Log In — Buildilume')
     </title>
@@ -30,16 +30,16 @@
                 <div class="login-brand-mid">
                     <span class="lp-badge lp-reveal">
                         <span class="lp-badge-dot"></span>
-                        Task &amp; Project Management
+                        No-Code Website Builder
                     </span>
 
                     <h1 class="login-brand-title lp-reveal">Welcome<br>Back.</h1>
-                    <p class="login-brand-sub lp-reveal">Sign in to pick up right where you left off — your boards, priorities, and deadlines are exactly where you put them.</p>
+                    <p class="login-brand-sub lp-reveal">Sign in to pick up right where you left off — your pages, widgets, and themes are exactly where you left them.</p>
 
                     <div class="lp-float-card login-float-card">
                         <div class="lp-float-inner">
                             <div class="lp-float-head">
-                                <span>On Progress</span>
+                                <span>Site Progress</span>
                                 <i class="fas fa-ellipsis"></i>
                             </div>
                             <div class="lp-float-body">
@@ -80,7 +80,7 @@
 
                 <span class="lp-eyebrow-sm">Welcome back</span>
                 <h2 class="login-title">Log in to your account</h2>
-                <p class="login-sub">Enter your details below to continue organizing your work.</p>
+                <p class="login-sub">Enter your details below to continue building your site.</p>
 
                 <div class="login-social-row">
                     <button type="button" class="lp-btn lp-btn-ghost login-social-btn login-social-btn-dark">

@@ -7,7 +7,7 @@
 
         <ul class="lp-nav-links" id="lp-nav-links">
             <li><a href=" @route('features') " <?php if (($activeNav ?? '') === 'features') echo 'class="is-active"'; ?>>Features</a></li>
-            <li><a href=" @route('how_it_works') " <?php if (($activeNav ?? '') === 'how_it_works') echo 'class="is-active"'; ?>>Experience</a></li>
+            <li><a href=" @route('how_it_works') " <?php if (($activeNav ?? '') === 'how_it_works') echo 'class="is-active"'; ?>>How it Works</a></li>
             <li><a href=" @route('pricing') " <?php if (($activeNav ?? '') === 'pricing') echo 'class="is-active"'; ?>>Pricing</a></li>
             <li><a href=" @route('about') " <?php if (($activeNav ?? '') === 'about') echo 'class="is-active"'; ?>>About</a></li>
             <li class="lp-mobile-only-link"><a href=" @route('login') ">Log In</a></li>
